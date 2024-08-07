@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(220, 202, 202);
+}
+
+.main{
+    margin-top: 300px;
+    margin-bottom: 300px;
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color: rgb(11, 11, 11);
+    border-radius: 30px;
+    border: 5px solid rgb(66, 132, 213);
+    border-style: double;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.head-left{
+    font-size: large;
+    color: rgb(240, 214, 155);
+}
+
+.info{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.head-right{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.connections{
+    display: flex;
+    justify-content: space-between;
+    width: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.gh{
+    width: 30px;
+    position: relative;
+    border-radius: 43px;
+    padding-left: 50px;
+    padding-right: 200px;
+}
+
+.li{
+   width: 30px;
+   position:relative;
+   padding-right: 200px;
+}
+
+.tw{
+    width: 30px;
+    border-radius: 50px;
+    position: relative;
+    padding-right: 30px;
+}
