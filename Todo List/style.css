@@ -1,0 +1,109 @@
+body{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/297/22/531/lake-blue-moonlight-moon-wallpaper-preview.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    float: none;
+    object-fit: contain;
+    object-position: 100% 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+#heading{
+    display: block;
+    margin: 0 auto;
+    padding: 5vh 20vh;
+    text-align: center;
+    color: #dd1c1c;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline dashed #f7f4f4 ;
+}
+
+#sp{
+    display: block;
+    margin-left: 550px;
+    margin-right: 300px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px     ;
+    color: white;
+    text-align: center;
+    font-style:oblique;
+    font-size: larger;
+    height: fit-content;
+    width: fit-content;
+    animation-name: span;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes span{
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: indigo;
+    }
+    50% {
+        background-color: violet;
+    }
+    100%{
+        background-color: grey;
+    }
+}
+
+#container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    outline-style: ridge;
+    outline-width: 5px;
+    outline-color: wheat;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1200px){
+    body {
+        background-position: top; 
+    }
+
+    #container{
+        margin-left: 200px;
+        margin-right: 200px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 16px
+    }
+
+    #heading {
+        padding: 8vh 16vh;
+    }
+}
+    
+@media only screen and (max-width: 480px) {
+    body {
+        background-size: contain; 
+        background-position: center top;
+    }
+
+    #container {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 14px;
+    }
+
+    #heading {
+        padding: 4vh 8vh;
+        font-size: 1.2rem;
+    }
+}
