@@ -51,7 +51,8 @@ function addToTask(){
     edit.addEventListener("click", function(){
         let newValue = prompt("Enter the value you want to update?");
         if (newValue !== null && newValue.trim() !== "") {
-            textValue.value = newValue;
+            textBox.setAttribute("value", newValue);
+            textValue = newValue;
         }
     });
 
