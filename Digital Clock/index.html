@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="clock-container">
+        <div id="start">
+            <button id="switch" value="off" onclick="keySwitch()" style="background-color: black; color:hwb(34 28% 22%); border-radius: 10px; font-size: medium;">Start</button>
+        </div>
+        <div id="clock-part1">
+            <input type="text" id="date" placeholder="date" class="sp1">
+            <input type="text" id="day" placeholder="day" class="sp2">
+        </div>    
+        <div id="clock-part2">
+            <input type="text" id="time-hour" placeholder="hrs" class="sp3">
+            <input type="text" id="time-min" placeholder="mins" class="sp4">
+            <input type="text" id="time-sec" placeholder="secs" class="sp5">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
