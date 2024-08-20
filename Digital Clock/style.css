@@ -102,6 +102,9 @@ body{
 }
 
 @media only screen and (max-width: 480px) {
+    #clock-container{
+        margin: 5vh 5vh;
+    }
     .sp1, .sp2, .sp3, .sp4, .sp5 {
         font-size: 0.8rem;
         height: 20px;
