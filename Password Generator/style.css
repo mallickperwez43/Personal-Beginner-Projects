@@ -1,0 +1,150 @@
+body{
+    margin:0;
+    padding: 0;
+    background-image: url(background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(224, 219, 219, 0.2);
+    padding: 3%;
+    border-radius:10%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#sec-1, #sec-2{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    flex-wrap: wrap;
+
+}
+
+#sec-2{
+    margin-bottom: 2vh;
+}
+
+#btn-1, #btn-2{
+    background-color: rgb(128, 197, 159);
+    border-radius: 7px;
+    box-shadow: 3px 3px rgb(1, 1, 4);
+}
+
+#btn-2{
+    cursor:pointer;
+}
+
+
+h2{
+    background: purple;
+    border: 10px groove whitesmoke;
+    text-align: center;
+    text-decoration: wavy;
+    color: peachpuff;
+    border-radius: 10px;
+}
+
+.state-val{
+    max-width: 7vh;
+    background: black;
+    color: whitesmoke;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+#minus{
+    margin-left: 3%;
+    margin-right: 1%;
+}
+
+#len{
+    max-width:45px;
+    width: 100%;
+    padding: 5px;
+    border-radius: 7px;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.len-property{
+    display: flex;
+    justify-items: baseline;
+    border-radius: 8px;
+    height: 25px;
+}
+
+#pass{
+    border: 3px groove black;
+    max-width: 100%;
+    width: 190px;
+    text-align: center;
+    padding: 0%;
+    background: rgb(103, 123, 188);
+    color: black;
+    font: 18px sans-serif;
+    font-weight: 10;
+    border-radius: 10px;
+    height: 25px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main {
+        width: 80%;
+        padding: 15px;
+    }
+
+    #btn-1, #btn-2 {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .state-val, #len, #pass {
+        font-size: 14px;
+    }
+
+    .len-property {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    #btn-1, #btn-2 {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .state-val, #len, #pass {
+        font-size: 12px;
+    }
+}
