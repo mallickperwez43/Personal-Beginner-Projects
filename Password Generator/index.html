@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="main">
+        <h2>Password Generator</h2>
+        <div id="sec-1">
+            <button id="btn-1">Length</button>
+            <div class="len-property">
+                <button class="state-val" id="minus" onclick="decrement()">-</button>
+                <input type="text" id="len" />
+                <button class="state-val" id="plus" onclick="increment()">+</button>
+            </div>
+        </div>
+        <div id="sec-2">
+            <button id="btn-2" onclick="generatePassword()">Generate</button>
+            <input type="text" id="pass" />
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
